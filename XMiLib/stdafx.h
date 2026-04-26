@@ -15,5 +15,15 @@
 #include <QtGui>
 #include <QtCore>
 
+#ifdef Q_OS_WIN
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
+#include <Windows.h>
+#endif
+
 
 #endif // XMILIB_SSTDAFX_H
